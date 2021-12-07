@@ -38,13 +38,15 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmm-bM-nbL">
-                                <rect key="frame" x="30" y="776" width="354" height="56"/>
+                                <rect key="frame" x="30" y="778" width="354" height="54"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oz8-cY-W5D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +60,12 @@
                             <constraint firstItem="Koi-o8-Bgq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="qxe-2I-2XP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewButton" destination="wmm-bM-nbL" id="KE6-lj-cyE"/>
+                        <outlet property="viewGreen" destination="oBz-QI-oDO" id="HMQ-L7-47Z"/>
+                        <outlet property="viewRed" destination="6hY-mI-P3l" id="auu-RW-Neg"/>
+                        <outlet property="viewYellow" destination="WCU-En-jih" id="dRI-It-kOt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
