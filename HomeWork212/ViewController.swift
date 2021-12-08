@@ -14,22 +14,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewGreen: UIView!
     @IBOutlet weak var viewButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewRed.layer.cornerRadius = viewRed.frame.size.width/2
-        viewRed.clipsToBounds = true
         viewRed.alpha = 0.3
-        viewYellow.layer.cornerRadius = viewRed.frame.size.width/2
-        viewYellow.clipsToBounds = true
         viewYellow.alpha = 0.3
-        viewGreen.layer.cornerRadius = viewRed.frame.size.width/2
-        viewGreen.clipsToBounds = true
         viewGreen.alpha = 0.3
         
         viewButton.layer.cornerRadius = 10
         viewButton.setTitle("START", for: .normal)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        viewRed.layer.cornerRadius = viewRed.frame.size.width/2
+//        viewRed.clipsToBounds = true
+        viewYellow.layer.cornerRadius = viewRed.frame.size.width/2
+//        viewYellow.clipsToBounds = true
+        viewGreen.layer.cornerRadius = viewRed.frame.size.width/2
+//        viewGreen.clipsToBounds = true
+
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {
