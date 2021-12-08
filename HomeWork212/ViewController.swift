@@ -27,12 +27,8 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         viewRed.layer.cornerRadius = viewRed.frame.size.width/2
-//        viewRed.clipsToBounds = true
         viewYellow.layer.cornerRadius = viewRed.frame.size.width/2
-//        viewYellow.clipsToBounds = true
         viewGreen.layer.cornerRadius = viewRed.frame.size.width/2
-//        viewGreen.clipsToBounds = true
-
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {
