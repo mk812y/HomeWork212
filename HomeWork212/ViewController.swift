@@ -17,12 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let buttonFrameWidth = viewRed.layer.frame.width
-        viewRed.layer.cornerRadius = buttonFrameWidth / 2
-//        viewRed.clipsToBounds = true
-        viewYellow.layer.cornerRadius = buttonFrameWidth / 2
-        viewGreen.layer.cornerRadius = buttonFrameWidth / 2
+        
+        viewRed.layer.cornerRadius = viewRed.frame.size.width/2
+        viewRed.clipsToBounds = true
+        viewYellow.layer.cornerRadius = viewRed.frame.size.width/2
+        viewYellow.clipsToBounds = true
+        viewGreen.layer.cornerRadius = viewRed.frame.size.width/2
+        viewGreen.clipsToBounds = true
+        
+        viewButton.layer.cornerRadius = 10
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {

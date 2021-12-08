@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -14,22 +14,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork212" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-o8-Bgq">
-                                <rect key="frame" x="132" y="94" width="150" height="470"/>
+                                <rect key="frame" x="136.33333333333331" y="94.000000000000028" width="155.33333333333331" height="485.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hY-mI-P3l">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155.33333333333334" height="155.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-En-jih">
-                                        <rect key="frame" x="0.0" y="160" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="165.33333333333331" width="155.33333333333334" height="155"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBz-QI-oDO">
-                                        <rect key="frame" x="0.0" y="320" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="330.33333333333331" width="155.33333333333334" height="155.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -38,8 +38,11 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmm-bM-nbL">
-                                <rect key="frame" x="30" y="778" width="354" height="54"/>
+                                <rect key="frame" x="142.66666666666669" y="812" width="142.66666666666669" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wmm-bM-nbL" secondAttribute="height" multiplier="77:27" id="8bH-iV-2ih"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -53,11 +56,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Koi-o8-Bgq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Rv7-oD-Twy"/>
-                            <constraint firstItem="wmm-bM-nbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="SpY-Rt-uS8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmm-bM-nbL" secondAttribute="trailing" constant="30" id="fZP-Cy-Jbi"/>
+                            <constraint firstItem="wmm-bM-nbL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SLB-6x-609"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wmm-bM-nbL" secondAttribute="bottom" constant="30" id="fvU-jk-Mnc"/>
                             <constraint firstItem="Koi-o8-Bgq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p4L-pQ-SNF"/>
                             <constraint firstItem="Koi-o8-Bgq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="qxe-2I-2XP"/>
+                            <constraint firstItem="wmm-bM-nbL" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="1:3" id="vpz-RA-Iqx"/>
                         </constraints>
                     </view>
                     <connections>
